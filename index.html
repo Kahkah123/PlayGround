@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b1019" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <title>Gridiron Glory — Road to Stardom</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<svg class="svg-defs" xmlns="http://www.w3.org/2000/svg"><symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></symbol><symbol id="i-ball" viewBox="0 0 24 24"><path d="M4 20c-1-8 7-16 16-16 1 9-7 17-16 16Z"/><path d="m9 9 6 6M10 12l2-2m0 4 2-2M5 16l3 3m8-14 3 3"/></symbol><symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20V10m8 10V4m8 16v-7M2 20h20"/></symbol><symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M5 21c0-4 3-6 7-6s7 2 7 6"/></symbol><symbol id="i-trophy" viewBox="0 0 24 24"><path d="M7 4h10v5c0 4-2 6-5 6S7 13 7 9V4Zm0 2H4v2c0 3 2 4 4 4m9-6h3v2c0 3-2 4-4 4M12 15v4m-4 2h8m-6-2h4"/></symbol><symbol id="i-gear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4m0-14.2-1.4 1.4M6.3 17.7l-1.4 1.4"/></symbol><symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol><symbol id="i-bolt" viewBox="0 0 24 24"><path d="m13 2-9 12h7l-1 8 10-13h-7V2Z"/></symbol></svg>
+<div class="app-shell">
+  <aside class="sidebar">
+    <div class="brand"><div class="brand-mark"><span>G</span><i></i></div><div><strong>GRIDIRON <em>GLORY</em></strong><small>THE ROAD TO STARDOM</small></div></div>
+    <div class="sidebar-label">YOUR CAREER</div>
+    <nav class="nav">
+      <button class="nav-item active" data-view="dashboard"><svg><use href="#i-grid"/></svg> Dashboard <span class="nav-current"></span></button>
+      <button class="nav-item" data-view="game"><svg><use href="#i-ball"/></svg> Game day</button>
+      <button class="nav-item" data-view="practice"><svg><use href="#i-bolt"/></svg> Practice <span class="nav-tag">NEW</span></button>
+      <button class="nav-item" data-view="player"><svg><use href="#i-user"/></svg> My player</button>
+      <button class="nav-item" data-view="career"><svg><use href="#i-chart"/></svg> Career journey</button>
+    </nav>
+    <div class="sidebar-label second">THE LEAGUE</div>
+    <nav class="nav"><button class="nav-item" data-view="standings"><svg><use href="#i-trophy"/></svg> Standings</button><button class="nav-item" data-view="settings"><svg><use href="#i-gear"/></svg> Settings</button></nav>
+    <div class="sidebar-bottom"><div class="side-progress"><div class="mini-kicker">THE JOURNEY BEGINS</div><strong>CHASE GREATNESS.</strong><p>Every legend starts somewhere. Make your name.</p><div class="progress-line"><span></span></div><small>CAREER PROGRESS <b id="side-progress">01 / 04</b></small></div><div class="profile"><div class="profile-avatar" id="profile-initials">JC</div><div><strong id="side-name">Jordan Carter</strong><small id="side-position">QB · YOUTH LEAGUE</small></div><button id="edit-profile" aria-label="Edit player">•••</button></div></div>
+  </aside>
+  <main class="main">
+    <header class="topbar"><div class="breadcrumb">MY CAREER <span>/</span> <b id="breadcrumb">DASHBOARD</b></div><div class="top-actions"><span class="season-pill"><span></span> SEASON 01</span><button class="icon-btn" id="help-btn" aria-label="How to play">?</button><div class="top-avatar" id="top-initials">JC</div></div></header>
+    <div class="content">
+      <div class="page-heading"><div><div class="eyebrow"><span></span> YOUR ROAD TO THE PROS</div><h1>THE JOURNEY <em>STARTS HERE.</em></h1><p>Put in the work. Make the plays. Leave your mark.</p></div><button class="outline-btn" id="player-edit-btn"><svg><use href="#i-user"/></svg> EDIT PLAYER</button></div>
+      <div class="layout">
+        <section class="primary">
+          <div class="section-title"><div><span class="section-index">01</span><h2>YOUR NEXT REP</h2><span class="muted-label"> / &nbsp;ON THE FIELD</span></div><span class="live-label"><i></i> LIVE FIELD</span></div>
+          <div class="game-card">
+            <div class="match-top"><div class="match-team"><div class="team-logo bears">C</div><div><small>YOUR TEAM</small><strong>CHICAGO</strong><span>BEARS</span></div></div><div class="match-center"><div class="match-meta"><span>CAREER SCRIMMAGE</span><i></i><span id="quarter-label">1ST QUARTER</span></div><div class="score"><b id="home-score">00</b><span>:</span><b id="away-score">00</b></div><div class="match-situation" id="situation">1ST &amp; 10 <span>·</span> BALL ON 25</div></div><div class="match-team away"><div><small>OPPONENT</small><strong>GREEN BAY</strong><span>PACKERS</span></div><div class="team-logo packers">G</div></div></div>
+            <div class="field-wrap"><canvas id="field" aria-label="Football field. Use arrow keys or WASD to move and Shift to sprint."></canvas><div class="field-overlay" id="field-overlay"><div class="overlay-icon">▶</div><div><strong>READY TO MAKE A PLAY?</strong><span>Choose your play, then hit the field.</span></div></div><div class="field-live" id="field-live"><span></span> <b id="field-status">PRE-SNAP</b></div></div>
+            <div class="playbar"><div class="play-select"><span class="tiny-label">SELECT A PLAY</span><div class="play-options"><button class="play-option active" data-play="Inside Run"><span class="play-diagram">↗</span><span><b>INSIDE RUN</b><small>GROUND GAME</small></span></button><button class="play-option" data-play="Sweep"><span class="play-diagram">⇢</span><span><b>SWEEP</b><small>OUTSIDE RUN</small></span></button><button class="play-option" data-play="Quick Pass"><span class="play-diagram">↝</span><span><b>QUICK PASS</b><small>SHORT YARDS</small></span></button></div></div><button class="primary-btn snap-btn" id="snap-btn">RUN THE PLAY <svg><use href="#i-arrow"/></svg></button></div>
+            <div class="game-help"><span><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> MOVE</span><span><kbd>SHIFT</kbd> SPRINT</span><span><kbd>SPACE</kbd> SNAP</span><span class="help-right">CONTROL THE <i></i> PLAYER</span></div>
+          </div>
+          <div class="touch-controls" aria-label="Touch controls"><div class="dpad"><button data-dir="up">▲</button><div><button data-dir="left">◀</button><button data-dir="down">▼</button><button data-dir="right">▶</button></div></div><button class="sprint-touch" data-dir="sprint">SPRINT</button></div>
+          <div class="section-title lower-title"><div><span class="section-index">02</span><h2>BUILD YOUR LEGACY</h2><span class="muted-label"> / &nbsp;THE WORK STARTS NOW</span></div><button class="text-link" data-open="career">VIEW JOURNEY <span>↗</span></button></div>
+          <div class="action-cards"><button class="action-card practice-card" data-open="practice"><div class="card-icon orange-icon">↗</div><div><span class="tiny-label">GET BETTER EVERY DAY</span><h3>HIT THE PRACTICE FIELD</h3><p>Put in reps. Earn your spot.</p></div><span class="card-arrow">↗</span></button><button class="action-card journey-card" data-open="career"><div class="card-icon blue-icon">✦</div><div><span class="tiny-label">YOUR ROAD TO THE PROS</span><h3>TRACK YOUR JOURNEY</h3><p>From the neighborhood to the league.</p></div><span class="card-arrow">↗</span></button></div>
+        </section>
+        <aside class="right-panel"><div class="section-title"><div><span class="section-index">03</span><h2>PLAYER SPOTLIGHT</h2></div><button class="more-btn" id="spotlight-edit" aria-label="Edit player">···</button></div>
+          <div class="player-card"><div class="player-card-top"><div><span class="tiny-label">YOUR PLAYER</span><h2 id="player-name">JORDAN<br>CARTER</h2><div class="player-sub" id="player-sub">#12 &nbsp; / &nbsp; QUARTERBACK</div></div><div class="overall"><strong id="overall">68</strong><span>OVR</span></div></div><div class="player-art"><div class="art-glow"></div><div class="art-number">12</div><svg viewBox="0 0 260 220" aria-label="Illustration of football player" role="img"><path fill="#101a27" d="M40 220c2-42 14-67 41-78l29-11 38 1 33 11c26 11 36 38 39 77Z"/><path fill="#ee6a2b" d="m80 143 28-11h44l30 11 16 24-25 16-9-13v50H96v-50l-9 13-25-16Z"/><path fill="#f5803e" d="m80 143 18-7 14 29-19 9-12-17-10 10-9-7Z"/><path fill="#f5803e" d="m180 143-18-7-14 29 19 9 12-17 10 10 9-7Z"/><path fill="#112238" d="M109 134h41l-6 19h-28Z"/><path fill="#e9bb92" d="M113 111h35v27c-9 9-25 9-35 0Z"/><path fill="#d5a47f" d="M106 78h47v40c-5 13-15 18-23 18s-19-7-24-18Z"/><path fill="#17283d" d="M101 90V72c0-26 13-39 30-39 19 0 32 13 32 39v18l-7 5-5-22h-41l-3 22Z"/><path fill="#203c5a" d="M101 76c0-27 13-43 30-43 19 0 32 16 32 43Z"/><path fill="#f17532" d="M127 34h8v41h-8Z"/><path fill="none" stroke="#e6edf2" stroke-width="4" d="M105 88h52m-55 10h57m-52-13v27m48-27v27m-48-8c14 8 35 8 48 0"/><path fill="#fff" opacity=".8" d="M115 166h9v32h-9zm19 0h11v5h-6v8h6v19h-13v-6h7v-8h-7v-18Z"/></svg><div class="art-tag">BUILT FOR<br><b>THE BIG MOMENT.</b></div></div><div class="player-info"><div><span>CAREER STAGE</span><b id="stage-name">YOUTH LEAGUE</b></div><div><span>DEPTH CHART</span><b id="depth-name">2ND STRING</b></div></div><div class="stats-title"><span>PLAYER ATTRIBUTES</span><button data-open="player">VIEW ALL ↗</button></div><div class="attribute-grid" id="attribute-grid"></div></div>
+          <div class="nickname-card"><div class="nickname-icon">✦</div><div><span class="tiny-label">YOUR NICKNAME</span><strong id="nickname">NOT EARNED YET</strong><p id="nickname-desc">Your game will do the talking.</p></div><span class="lock">◇</span></div>
+          <div class="feed-card"><div class="feed-heading"><span>FROM THE SIDELINES</span><span>✦</span></div><p id="feed-text">“Every great story starts with a first snap. Let's see what you've got.”</p><div><span class="feed-avatar">GG</span><b>GRIDIRON NETWORK</b><small> · JUST NOW</small></div></div>
+        </aside>
+      </div>
+      <footer><span>GRIDIRON GLORY <b> / </b> THE ROAD TO STARDOM</span><span>YOUR STORY IS YOURS TO WRITE. &nbsp; ✦</span></footer>
+    </div>
+  </main>
+</div>
+<div class="modal-backdrop hidden" id="modal-backdrop"><div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"><button class="modal-close" id="modal-close" aria-label="Close">×</button><div id="modal-content"></div></div></div>
+<div id="toast" class="toast" role="status"></div>
+<script src="field.js"></script><script src="app.js"></script>
+</body></html>
